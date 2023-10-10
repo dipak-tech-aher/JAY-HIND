@@ -1,0 +1,15 @@
+.input-container {
+  display: inline-block;
+  position: relative;
+}
+
+.expandable-input {
+  width: 150px; /* Initial width */
+  padding: 8px;
+  border: 1px solid #ccc;
+  transition: width 0.3s ease; /* Transition for smooth width change */
+}
+
+.expandable-input.expanded {
+  width: 300px; /* Width when expanded */
+}

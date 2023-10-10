@@ -1,0 +1,26 @@
+const Joi = require('joi')
+const { createNamespace } = require('continuation-local-storage')
+const { getTenantConnection } = require('@services/connection-service')
+
+const namespace = createNamespace('tenants')
+
+const connectionRequest = (req, res, next) => {
+  const schema = Joi.object({
+    tenantId: Joi.string().guid({ version: 'uuidv4' }).required()
+  })
+
+  const tenantId = req.headers['x-tenant-id']
+
+  const { error } = schema.validate({ tenantId })
+
+  if (error) {
+    return res.json({ success: false, message: error.message.replace(/["]/g, '') })
+  }
+
+  namespace.run(() => {
+    namespace.set('connection', getTenantConnection(tenantId))
+    next()
+  })
+}
+
+module.exports = { connectionRequest }

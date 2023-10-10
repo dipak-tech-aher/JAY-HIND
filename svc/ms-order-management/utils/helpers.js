@@ -1,0 +1,98 @@
+import { camelCase, pick, some } from 'lodash'
+import { CryptoHelper } from '@utils'
+import { isAfter } from 'date-fns'
+
+export const camelCaseConversion = (data) => {
+  for (let index = 0; index < data.length; index++) {
+    const obj = data[index]
+    for (const key in obj) {
+      const element = obj[key]
+      delete obj[key]
+      obj[camelCase(key)] = element
+    }
+  }
+  return data
+}
+
+export const pickProperties = (obj, fields) => {
+  return pick(obj, fields)
+}
+
+const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
+
+export const generateString = (length) => {
+  let result = ' '
+  const charactersLength = characters.length
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength))
+  }
+
+  return result
+}
+
+export const getUniqueObject = (object, key) => {
+  return [...new Set(object.map(t => t[key]))]
+}
+
+export const hasDuplicates = arr => {
+  const valuesSoFar = Object.create(null)
+  for (let i = 0; i < arr.length; ++i) {
+    const currentObject = arr[i]
+    const objectKey = JSON.stringify(currentObject)
+    if (valuesSoFar[objectKey]) {
+      return true
+    }
+    valuesSoFar[objectKey] = true
+  }
+  return false
+}
+
+export const getNonDuplicateData = (mainArr, mainObj) => {
+  // console.log(_.some(mainArr, v => _.isEqual(v, mainObj)))
+  let value
+  some(mainArr, v => {
+    if (!_.isEqual(v, mainObj)) {
+      value = v
+    }
+  })
+  return value
+}
+export const checkSessionExpiry = async (accessToken) => {
+  const cryptoHelper = new CryptoHelper()
+  try {
+    let decodedToken
+    try {
+      decodedToken = cryptoHelper.verifyJWT(accessToken)
+    } catch (error) {
+      console.error(error)
+      return {
+        status: 'EXPIRED',
+        message: 'JWT Token signature error'
+      }
+    }
+
+    const decryptedToken = cryptoHelper.decrypt(decodedToken)
+    if (decryptedToken) {
+      const date = new Date()
+      const expireTime = new Date(decryptedToken.expiresIn)
+      const currentTime = new Date(date.getTime())
+
+      // const fiveMinutesAgo = new Date(expireTime.getTime() - 5000 * 60)
+      if ((isAfter(expireTime, currentTime))) {
+        return {
+          status: 'NOT-EXPIRED',
+          message: 'Session token not expired'
+        }
+      }
+    }
+    return {
+      status: 'EXPIRED',
+      message: 'Session token expired'
+    }
+  } catch (error) {
+    return {
+      status: 'EXPIRED',
+      message: 'Internal server error'
+    }
+  }
+}

@@ -1,0 +1,71 @@
+﻿<!--<!DOCTYPE HTML> -->
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Company name</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<script type="text/javascript" src="http://192.168.4.101:8080/smarten/js/EJBIapi.js"></script>
+	<script type="text/javascript">
+		//"dAdmin147f416eebf.dsb";
+		//"d15c5f093091.dsb";
+		function objectType() {
+
+
+			//username = "bicrmadmin@css";
+			username = "admin";
+			/*token = encodeURIComponent(document.getElementById("token").value);
+			resource = document.getElementById("resource").value;*/
+
+			//loadObject("d17043cbd16d.dsb", "contentId");
+			//a1703ec1e00a.als
+			//loadObject("a1703ec1e00a.als","contentId");
+			//loadObject("r17642b40162.rpt", "contentId");
+			//loadObject("a177396d4127.als","contentId");
+			loadObject("d14c0d920eab.dsb", "contentId");
+
+		}
+		function loadObject(objectId, divId) {
+			console.log(divId);
+			var params = {
+				url: "http://192.168.4.101:8080/smarten",
+				objectid: objectId,
+				username: "admin",
+				password: "admin",
+				accesskey: "",
+				toolbar: "true",
+				showobjectname: "true",
+				type: "object",
+				containerid: divId,
+				//tokenid: "",
+				autoHeight: true,
+				width: "100%",
+				height: "100%",
+				responsive: "false",
+				teamup: "false"
+				//PostCode:"SN2 2EQ"
+				/*Year:"2015",
+				ProductCategory:"Bakery"*/
+				//State:"Rajasthan$*$Haryana"				
+				//State:"Haryana"
+				//ssoParams:"srvUser=admin"
+				//pagenumber:"2"					
+				//State:"Rajasthan"
+				//ssoParams:"token="+token+"&resource="+resource+"&srvUser=admin"
+			}
+			new EJBIapi(params).loadObject();
+		}
+//width:700px;height:400px;
+	</script>
+</head>
+
+<body onload="objectType();">
+
+	<div class="col-lg-10 col-md-9 col-sm-9 col-xs-12">
+		<div id="contentId" style="overflow:auto;"></div>
+	</div>
+
+</body>
+
+</html>

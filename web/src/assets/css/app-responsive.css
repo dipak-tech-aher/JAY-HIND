@@ -1,0 +1,832 @@
+/********** Media Queries **********/
+
+
+/**** Existing ***/
+@media screen and (max-width: 1090px) and (min-width: 1086px) {
+    .navbar-custom li#profile p.logo-name {
+        width: 134px;
+    }
+
+    li#profile {
+        width: 100px;
+    }
+
+    ul.list-unstyled.topnav-menu.mb-0 {
+        float: left;
+    }
+
+    .adv-search input.form-control.w-250 {
+        width: 143px !important;
+    }
+
+    li#switchNotes {
+        position: relative;
+        right: -10px;
+    }
+}
+
+@media (min-width: 992px) {
+    body[data-sidebar-size="condensed"] .footer {
+        left: 70px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .monitor-sec h5.header-title {
+        float: left;
+        width: 75px;
+    }
+
+    .agent-count {
+        margin-top: 0;
+    }
+
+    .tp-menu.clearfix,
+    .clearfix::after {
+        clear: inherit;
+    }
+
+    .navbar-custom {
+        top: 0px;
+    }
+
+    nav ul.navbar-nav li ul {
+        height: 150px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        width: 97%;
+    }
+
+    nav ul.navbar-nav li ul ul {
+        height: auto;
+        overflow: inherit;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        background-color: #fff;
+    }
+
+    .navbar .nav-item > .nav-link {
+        color: #000; /* Set color to black */
+    }
+    
+    .navbar .dropdown-menu {
+        left: 100% !important;
+    }    
+
+    #navbarSupportedContent ul ul ul.dropdown-menu {
+        display: block;
+        width: 290px;
+        top: 0;
+        margin-bottom: 10px;
+        left: 0 !important;
+        position: inherit !important;
+        border: 1px solid #888684;
+    }
+}
+
+@media (max-width: 768px) {
+    .tab-content .list-group-item-action {
+        font-size: 12px;
+    }
+
+    #mservices1 .tab-pane button.btn.btn-sm.btn-primary {
+        margin-bottom: 5px;
+    }
+
+    .chat-page .cus-ct .publisher {
+        width: 88% !important;
+    }
+
+    .cus-ct .publisher textarea {
+        width: 68% !important;
+    }
+
+    .admin-user .form-group label,
+    label.control-label,
+    .modal-dialog .col-auto label {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    body[data-sidebar-size="condensed"]:not([data-layout="compact"]) {
+        min-height: 1750px;
+    }
+
+    .modal-header {
+        border-bottom: 1px solid #163c81 !important;
+    }
+
+    /* .ReactModalPortal .ReactModal__Content {
+        width: 90% !important;
+        margin: 1.75rem auto;
+    } */
+    .ReactModalPortal .ReactModal__Content {
+        width: 90% !important;
+        margin: 15px auto;
+        /* position: relative !important;
+        inset: 0 !important; */
+        height: 95%;
+    }
+
+    .ReactModalPortal .ReactModal__Content.addProducts {
+        width: 1300px !important;
+        position: absolute;
+        top: 0px !important;
+        inset: 40px;
+        border: 1px solid rgb(204, 204, 204);
+        background: rgb(255, 255, 255);
+        overflow: auto;
+        border-radius: 4px;
+        outline: none;
+        padding: 20px;
+    }
+
+    table.selectedProducts td {
+        vertical-align: top !important;
+        padding: 0.35rem !important;
+    }
+
+    .channel-sel .col-md-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar-custom .topnav-menu .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .pro-user-name {
+        display: none;
+    }
+}
+
+@media (max-width: 991.98px) {
+    body {
+        overflow-x: hidden;
+        padding-bottom: 80px;
+    }
+
+    .left-side-menu {
+        display: none;
+        z-index: 10 !important;
+    }
+
+    .sidebar-enable .left-side-menu {
+        display: block;
+    }
+
+    .content-page,
+    body[data-sidebar-size="condensed"] .content-page {
+        margin-left: 0 !important;
+        padding: 0 10px;
+    }
+
+    .footer {
+        left: 0 !important;
+    }
+
+    .col-lg-10.pl-0.pr-0 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 992px) {
+    body[data-layout-mode="detached"] .navbar-custom .container-fluid {
+        max-width: 95%;
+    }
+
+    body[data-layout-mode="detached"] #wrapper {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+
+    body[data-layout-mode="detached"] .left-side-menu {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    body[data-layout-mode="detached"] .content-page {
+        padding-bottom: 30px;
+    }
+
+    body[data-layout-mode="detached"] .logo-box {
+        background-color: transparent;
+        background-image: none;
+    }
+}
+
+/**** Existing Ends ***/
+
+@media screen and (max-width:480px)
+{
+
+}
+
+@media (min-width:320px) and (max-width:600px) {
+    .skel-tot-inter
+    {
+        width: 100%;
+    }
+    .table-footer-info
+    {
+        grid-template-columns: 100%;
+    }
+    .tbl-pagination
+    {
+        justify-content: center;
+        margin: 10px 0;
+    }
+    .skel-int-tile-appt-info
+    {
+        grid-template-columns: 50% 50%;
+    }
+    .skel-tile-sect
+    {
+        grid-template-columns: 50% 50%;
+    }
+}
+
+
+
+@media (min-width:601px) and (max-width:767px) {
+    .skel-tot-inter {
+        width: 70%;
+    }
+    .skel-add-product-stype .skel-plans {
+        flex-direction: row;
+    }
+    .skel-add-product-stype .skel-plans.product-skel-plans {
+        flex-direction: column;
+    }
+    .skel-plans-product .input-group {
+        margin: 0 auto;
+        width: 40% !important;
+    }
+    .skel-tile-sect, .skel-int-tile-appt-info
+    {
+        grid-template-columns: 50% 50%;
+    }
+    .skel-tile-info
+    {
+        grid-template-columns: 20% 80%;
+    }
+}
+
+
+@media screen and (max-width:991px)
+{
+    .skel-plans {
+        margin: 0 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        flex-wrap: nowrap;
+        max-height: 100%;
+    }
+    .skel-add-product-stype .skel-plans .skel-plan {
+        width: 100%;
+        text-align: center;
+    }
+    .add-prod-rht
+    {
+        height: auto;
+    }
+    .confirmation-popup .modal-content {
+    width: 80% !important;
+    }
+    .skel-resp-mt
+    {
+        margin-top: 10px;
+    }
+    .skel-product-title-text {
+        display: block;
+        width: 100% !important;
+        max-width: 100%;
+    }
+    .skel-perf-sect .skel-perf-data
+    {
+            flex-direction: column;
+    }
+     .skel-top-5-perf-sect
+    {
+        grid-template-columns: 100%;
+    }
+    .skel-appt-dashboard-succ-unsucc-data{margin: 10px 0; grid-template-columns: 50% 50%;}
+    /*** c360 ***/
+    .cust-summary, .cust-sect-tgrid, .container-four-row, .container-three-row
+    {
+        grid-template-columns: 100%;
+    }
+    .cust-summary.skel-print-prev-sect .cust-profile-bottom {
+    grid-template-columns: 100%;
+    }
+    .cust-open-accounts, .cust-open-tickets a{margin: 10px 0;}
+    .prodt-slick.skel-prdt-slick-preview.service-account-sect .slick-track {
+        width: 100% !important;
+    }
+    .prodt-slick.skel-prdt-slick-preview.service-account-sect .slick-initialized .slick-slide
+    {
+        width: 100% !important;
+    }
+    .bussiness-info
+    {
+        display: flex;
+    }
+    .bussiness-type, .profile-status
+    {
+        width: 120px;
+    }
+}
+
+
+
+@media (min-width: 320px) and (max-width: 767px)
+{    
+    
+    /* .rht-skel{justify-content: center;} */
+    .cust-profile-top{grid-template-columns: 100%; grid-row-gap: 15px;}
+    .skel-view-base-card{height: auto;}
+    .skel-wiz-date{font-size: 14px; text-align: center; grid-template-columns: 100%; margin: 0 5px;}
+    .skel-wiz-date span{margin: 5px 0; justify-content: center;}
+    .skel-view-base-card .slick-slider{height: auto;}
+    .skel-view-base-card .slick-slider:hover {overflow-y: unset; }
+    .skel-billing-schedule{grid-template-columns: 100%;}
+    .skel-billing-schedule table{width: 100%;}
+    .skel-billing-schedule table tr td:first-child{width:30%}
+    .skel-billing-schedule table tr td:only-child{width:10%}
+    .skel-billing-schedule table tr td:last-child{width:60%}
+    .skel-billing-schedule table:last-child{text-align: left;}
+    .skel-btn-sect{justify-content: center; width: 100%;}
+    .skel-serv-sect-revenue{width: 100%;}
+    .skel-place-img{max-width: 25%; display: none;}
+    .skel-cr-rht-sect-form {
+        padding: 15px 0 !important;
+    }
+    .skel-available-products
+    {
+        padding-left: 0 !important;
+    }
+    .skel-selected-category
+    {
+        margin-top: 10px;
+    }
+    .card-img-top {
+        height: auto;
+        margin: 10px 0;
+        max-width: 45%;
+    }
+    .skel-plans-product .input-group
+    {
+        margin: 0 auto; width: 60%;
+    }
+    .skel-plans-price.pull-right {
+        float: none;
+    }
+    .skel-plans-sect-base {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .skel-plans-sect-base .skel-plans-price {
+        margin-top: 0;
+    }
+    .card-img-top {
+        max-width: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        padding: 3px;
+    }
+    .skel-btn-submit, .skel-btn-cancel
+    {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: auto;
+    }
+
+    .skel-op-dashboard-lft-base {
+        position: relative;
+        display: none;
+    }
+
+    .skle-swtab-sect
+    {
+        flex-direction: column;
+    }
+    .switchToggle label
+    {
+        margin-bottom: 0;
+    }
+    .db-list{margin-bottom: 10px !important;}
+    
+    .skel-op-dashboard-rht-base{grid-template-columns:100%;}
+    .skel-op-dashboard-rht-base .cmmn-skeleton.mt-3 { margin: 10px 0 !important; }
+    .skel-config-top-sect h2 {
+    font-weight: 600;
+    line-height: 32px;
+    font-size: 1.5rem;
+    }
+    .skel-config-data, .skel-configuration-settings
+    {
+        flex-direction: column;
+    }
+    .skel-config-icon {
+    width: 21%;
+    transform: rotate(90deg);
+    }
+    .skel-main-configure-screen .skel-config-cnt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+    }
+    .skel-main-configure-screen .skel-config-btn {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    }
+
+    .skel-system-para-settings .skel-config-cnt
+    {
+        width: 100%;
+    }
+    .skel-system-para-settings .skel-config-btn {
+    width: 100%;
+    margin: 5px 0px;
+    }
+    .skel-system-para-settings .skel-config-data
+    {
+        align-items: flex-start;
+    }
+    .skel-emoj-data
+    {
+        overflow-x: auto;
+    }
+    .skel-tbl-col
+    {
+        height: auto;
+    }
+    .skel-view-interaction-stat
+    {
+        grid-template-columns: 100%;
+    }
+    .select-cus {
+        margin: 10px auto 0;
+        width: 200px;
+        display: flex;
+        align-items: center;
+    }
+    .cmmn-skeleton.skel-cr-cust-form
+    {
+        margin: 10px 0;
+        padding: 15px !important;
+    }
+    
+    .db-list a
+    {
+        font-size: 14px;
+    }
+    .skel-top-5-perf-sect
+    {
+        grid-template-columns: 100%;
+    }
+    .skel-informative-data .cmmn-skeleton {
+        margin-bottom: 10px;
+    }
+
+    .skel-informative-data .row.mt-3 {
+        margin-top: 0 !important;
+    }
+    
+    .skel-top-5-perf-sect
+    {
+        grid-template-columns: 100%;
+    }
+    .skel-res-m
+    {
+        margin: 10px 0;
+    }
+    .skel-configuration-settings, .skel-appl-config
+    {
+        width: 95%;
+    }
+    .customer_records .form-row
+    {
+        display: block;
+        margin: 10px 0;
+    }
+    .addmore, .inputRemoveslots
+    {
+        top:0;
+    }
+    .skel-config-cnt {
+    width: 80%;
+    }
+    .skel-config-btn {
+    width: 25%;
+    }
+    .skel-helpdesk-ticket
+    {
+        grid-template-columns: 100%;
+    }
+    .skel-interaction-detail-section td:first-child {
+    width: 100%;
+    }
+    .bar-left.pr-0 {
+    width: 100% !important;
+    }
+    .blue-bar ul
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 5px;
+    }
+    .blue-bar ul li
+    {
+        width: 15%;
+        border-bottom: 0;
+    }
+    .hd-tit.text-right {
+    text-align: center !important;
+    }
+    .help-filter .col-md-6.col-xs-6 {
+        width: 50%;
+    }
+    .skel-qu-helpdesk .status-num h5
+    {
+        text-align: left;
+    }
+    .skel-helpdesk-sortable-list
+    {
+        height: 100% !important;
+    }
+    .skel-bulk-upload-success
+    {
+        width: 100%;
+    }
+}
+
+
+@media (min-width:768px) and (max-width: 920px)
+{
+    
+   
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .skel-migration-template
+    {
+        grid-column-gap: 10px;
+    }
+    .bar-left.pr-0 {
+    width: 100% !important;
+    }
+    .blue-bar ul
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 5px;
+    }
+    .blue-bar ul li
+    {
+        width: 15%;
+        border-bottom: 0;
+    }
+    .help-filter .col-md-6.col-xs-6 {
+        width: 50%;
+    }
+    .skel-helpdesk-ticket
+    {
+        grid-template-columns: 100%;
+    }
+    body {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .skel-config-cnt {
+    width: 80%;
+    }
+    .skel-config-btn {
+    width: 25%;
+    }
+   
+    .skel-view-base-card
+    {
+        height: auto;
+    }
+    .skel-emoj-data
+    {
+        overflow-x: auto;
+    }
+    .skel-place-img {
+        max-width: 25%;
+    }
+    .skel-tbl-col, .skel-view-base-card .slick-slider
+    {
+        height: auto;
+    }
+    .skel-add-product-stype .skel-plans {
+        flex-direction: row;
+    }
+    .skel-plans.product-skel-plans {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 10px;
+    }
+    .skel-plans-product .input-group {
+        margin: 0 auto;
+        width: 50% !important;
+    }
+    .skel-tile-info
+    {
+        grid-template-columns: 20% 80%;
+    }
+    .skel-op-dashboard-lft-base.cmmn-skeleton {
+    display: none;
+    }
+    .skel-dashboard-data .false {
+    width: 100%;
+    overflow-x: scroll;
+    }
+    .skel-configuration-settings, .skel-appl-config
+    {
+        width: 95%;
+    }
+    .skel-config-steps {    
+    height: 240px;
+    flex-direction: column;
+    }
+}
+
+
+@media (min-width: 992px) and (max-width: 1023px) {
+    .skel-configuration-settings, .skel-appl-config
+    {
+        width: 95%;
+    }
+    .skel-config-steps {    
+    height: 240px;
+    flex-direction: column;
+    }
+    .skel-plans-product.skel-plan
+    {
+        width: 48%;
+        margin: 5px 10px 5px 0;
+    }
+    .skel-op-dashboard-lft-base.cmmn-skeleton {
+    width: 100% !important;
+    }
+    .skel-resp-w-100 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 100%;
+    }
+    .skel-op-dashboard-lft-base.cmmn-skeleton {
+    width: 100% !important;
+    }
+    .skel-resp-w-100 {
+    width: 100% !important;
+    max-width: 100% !important;
+    flex: 100%;
+    }
+     /*** c360 ***/
+    .cust-summary, .cust-sect-tgrid, .container-four-row, .container-three-row
+    {
+        grid-template-columns: 100%;
+    }
+    .cust-summary.skel-print-prev-sect .cust-profile-bottom {
+    grid-template-columns: 100%;
+    }
+    .cust-open-accounts, .cust-open-tickets a{margin: 10px 0;}
+    .bussiness-info
+    {
+        display: flex;
+    }
+    .bussiness-type, .profile-status
+    {
+        width: 120px;
+    }
+    .skel-filter-frm-btn
+    {
+        margin-top: 30px;
+    }
+        .skel-op-dashboard-lft-base.cmmn-skeleton {
+            width: 100% !important;
+            z-index: 99999;
+        }
+
+    .filter-form {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 10px;
+    }
+    .is-sticky
+    {
+        top:70px !important;
+        left: 0;
+    }
+
+        .rs-navbar-item,
+        .rs-navbar-nav>.rs-dropdown .rs-dropdown-toggle
+        {
+            padding: 18px 10px;
+        }
+}
+
+@media (min-width: 1024px) and (max-width: 1250px) {
+    .skel-configuration-settings, .skel-appl-config
+    {
+        width: 95%;
+    }
+    .skel-config-steps {    
+   
+    padding: 20px 10px;
+    }
+    .skel-op-dashboard-lft-base.cmmn-skeleton {
+            width: 100% !important;
+                z-index: 9999;
+        }
+    
+        .skel-resp-w-100 {
+            width: 100% !important;
+            max-width: 100% !important;
+            flex: 100%;
+        } 
+        .is-sticky
+    {
+        top:70px !important;
+        left: 0;
+    }
+        .skel-filter-frm-btn {
+            margin-top: 30px;
+        }
+    
+        .filter-form {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            grid-column-gap: 10px;
+        }
+
+
+         /*** c360 ***/
+    .cust-summary, .cust-sect-tgrid, .container-four-row, .container-three-row
+    {
+        grid-template-columns: 100%;
+    }
+    .cust-summary.skel-print-prev-sect .cust-profile-bottom {
+    grid-template-columns: 100%;
+    }
+    .cust-open-accounts, .cust-open-tickets a{margin: 10px 0;}
+    .bussiness-info
+    {
+        display: flex;
+    }
+    .bussiness-type, .profile-status
+    {
+        width: 120px;
+    }
+           .rs-navbar-item,
+           .rs-navbar-nav>.rs-dropdown .rs-dropdown-toggle {
+               padding: 18px 10px !important;
+           }
+}
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .skel-serv-sect-revenue{width: 70%;}
+    .skel-place-img{max-width: 28%;}
+    /* .cust-profile-top{grid-template-columns: 100%;} */
+    .customer-buttons-top { margin: 5px 0;}
+    .cust-profile-bottom { margin: 5px 0;}
+    .profile-info-rht{padding: 0;}
+    .skel-plans-product.skel-plan {
+        width: 48%;
+        margin: 5px 10px 5px 0;
+    }
+    
+}
+
+@media (min-width: 1401px) and (max-width: 1600px) {}
+
+@media (min-width: 1601px) and (max-width: 1919px) {}
+
+@media screen and (min-width: 1920px) {}
